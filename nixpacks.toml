@@ -10,4 +10,4 @@ cmds = ["npm ci"]
 cmds = []
 
 [start]
-cmd = "npx cds-serve"
+cmd = "npm start"
