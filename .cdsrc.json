@@ -1,0 +1,17 @@
+{
+    "requires": {
+        "auth": {
+            "kind": "dummy"
+        },
+        "db": {
+            "kind": "postgres"
+        }
+    },
+    "production": {
+        "requires": {
+            "auth": {
+                "kind": "dummy"
+            }
+        }
+    }
+}
