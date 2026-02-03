@@ -4,14 +4,13 @@
             "kind": "dummy"
         },
         "db": {
-            "kind": "postgres"
-        }
-    },
-    "production": {
-        "requires": {
-            "auth": {
-                "kind": "dummy"
+            "kind": "sqlite",
+            "credentials": {
+                "database": ":memory:"
             }
         }
+    },
+    "server": {
+        "port": 8080
     }
 }
