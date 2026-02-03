@@ -1,0 +1,13 @@
+# Nixpacks configuration for Railway
+[phases.setup]
+nixPkgs = ["nodejs_22", "npm-9_x"]
+
+[phases.install]
+cmds = ["npm ci"]
+
+# No build phase needed - CAP runs directly
+[phases.build]
+cmds = []
+
+[start]
+cmd = "npx cds-serve"
