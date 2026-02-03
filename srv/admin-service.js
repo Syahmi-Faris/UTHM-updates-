@@ -20,6 +20,20 @@ let systemSettings = {
 module.exports = class AdminService extends cds.ApplicationService {
 
     async init() {
+        
+        // Seed database with admin user if empty
+        const { Admins } = this.entities;
+        const existingAdmin = await SELECT.one.from(Admins);
+        if (!existingAdmin) {
+            console.log('Seeding database with admin user...');
+            await INSERT.into(Admins).entries({
+                ID: 'd1e2f3g4-1111-2222-3333-444455556666',
+                username: 'admin',
+                password: 'admin123',
+                name: 'System Administrator'
+            });
+            console.log('Admin user created successfully!');
+        }
 
         // Handle login action
         this.on('login', async (req) => {
