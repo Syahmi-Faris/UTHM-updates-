@@ -11,7 +11,7 @@
     "@cap-js/sqlite": "^2"
   },
   "scripts": {
-    "start": "cds deploy --to sqlite:db.sqlite && cds-serve"
+    "start": "./node_modules/.bin/cds deploy --to sqlite:db.sqlite && ./node_modules/.bin/cds-serve"
   },
   "private": true
 }
