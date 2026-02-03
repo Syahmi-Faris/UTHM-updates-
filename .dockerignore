@@ -1,0 +1,27 @@
+# Dependencies - Railway will install these fresh
+node_modules/
+
+# Git
+.git/
+.gitignore
+
+# IDE
+.vscode/
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Render config (not needed for Railway)
+render.yaml
+
+# Test files
+test.php
+
+# Local database
+*.db
+*.sqlite
