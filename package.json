@@ -11,7 +11,7 @@
     "@cap-js/sqlite": "^2"
   },
   "scripts": {
-    "start": "cds-deploy --to sqlite && cds-serve"
+    "start": "npx cds deploy --to sqlite:db.sqlite && npx cds-serve"
   },
   "private": true
 }
