@@ -6,7 +6,7 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@sap/cds": "^8",
+    "@sap/cds": "^9",
     "express": "^4",
     "@cap-js/postgres": "^1"
   },
