@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="dashboard-page">
+    <div class="dashboard-container">
+        <!-- Header -->
+        <header class="dashboard-header">
+            <div class="header-left">
+                <div class="logo-small">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+                        <path
+                            d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z">
+                        </path>
+                    </svg>
+                </div>
+                <h1>Settings</h1>
+            </div>
+            <div class="header-right">
+                <span class="admin-name" id="adminName">Welcome, Admin</span>
+                <button id="logoutBtn" class="logout-btn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
+                        <polyline points="16 17 21 12 16 7"></polyline>
+                        <line x1="21" y1="12" x2="9" y2="12"></line>
+                    </svg>
+                    <span>Logout</span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Layout with Sidebar -->
+        <div class="dashboard-layout">
+            <!-- Sidebar Navigation -->
+            <aside class="sidebar">
+                <nav class="sidebar-nav">
+                    <div class="nav-section">
+                        <span class="nav-label">Main</span>
+                        <a href="dashboard.html" class="nav-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="3" width="7" height="7"></rect>
+                                <rect x="14" y="14" width="7" height="7"></rect>
+                                <rect x="3" y="14" width="7" height="7"></rect>
+                            </svg>
+                            <span>Dashboard</span>
+                        </a>
+                        <a href="courses.html" class="nav-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <span>Courses</span>
+                        </a>
+                        <a href="pending.html" class="nav-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                            <span>Pending Approvals</span>
+                            <span class="nav-badge">156</span>
+                        </a>
+                    </div>
+                    <div class="nav-section">
+                        <span class="nav-label">Admin</span>
+                        <a href="activity.html" class="nav-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                            </svg>
+                            <span>Activity Log</span>
+                        </a>
+                        <a href="settings.html" class="nav-item active">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                </path>
+                            </svg>
+                            <span>Settings</span>
+                        </a>
+                    </div>
+                </nav>
+            </aside>
+
+            <!-- Main Content Area -->
+            <main class="dashboard-main">
+                <div class="page-header">
+                    <h2>System Settings</h2>
+                    <p>Configure registration system preferences</p>
+                </div>
+
+                <!-- Settings Cards -->
+                <div class="settings-grid">
+                    <!-- Registration Period -->
+                    <div class="settings-card">
+                        <div class="settings-card-header">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="16" y1="2" x2="16" y2="6"></line>
+                                <line x1="8" y1="2" x2="8" y2="6"></line>
+                                <line x1="3" y1="10" x2="21" y2="10"></line>
+                            </svg>
+                            <h3>Registration Period</h3>
+                        </div>
+                        <div class="settings-card-body">
+                            <div class="form-group">
+                                <label>Current Semester</label>
+                                <select class="form-input" id="semester">
+                                    <option value="Semester 1 2025/2026">Semester 1 2025/2026</option>
+                                    <option value="Semester 2 2025/2026">Semester 2 2025/2026</option>
+                                    <option value="Short Semester 2025/2026">Short Semester 2025/2026</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label>Start Date</label>
+                                    <input type="date" class="form-input" id="startDate">
+                                </div>
+                                <div class="form-group">
+                                    <label>End Date</label>
+                                    <input type="date" class="form-input" id="endDate">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="toggle-label">
+                                    <input type="checkbox" id="registrationOpen">
+                                    <span class="toggle-switch"></span>
+                                    Registration is Open
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Course Settings -->
+                    <div class="settings-card">
+                        <div class="settings-card-header">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                            </svg>
+                            <h3>Course Settings</h3>
+                        </div>
+                        <div class="settings-card-body">
+                            <div class="form-group">
+                                <label>Maximum Credit Hours</label>
+                                <input type="number" class="form-input" id="maxCreditHours">
+                            </div>
+                            <div class="form-group">
+                                <label>Minimum Credit Hours</label>
+                                <input type="number" class="form-input" id="minCreditHours">
+                            </div>
+                            <div class="form-group">
+                                <label class="toggle-label">
+                                    <input type="checkbox" id="requireAaApproval">
+                                    <span class="toggle-switch"></span>
+                                    Require AA Approval
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Notification Settings -->
+                    <div class="settings-card">
+                        <div class="settings-card-header">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+                                <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+                            </svg>
+                            <h3>Notifications</h3>
+                        </div>
+                        <div class="settings-card-body">
+                            <div class="form-group">
+                                <label class="toggle-label">
+                                    <input type="checkbox" id="emailNewRegistrations">
+                                    <span class="toggle-switch"></span>
+                                    Email notifications for new registrations
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="toggle-label">
+                                    <input type="checkbox" id="emailApprovals">
+                                    <span class="toggle-switch"></span>
+                                    Email notifications for approvals
+                                </label>
+                            </div>
+                            <div class="form-group">
+                                <label class="toggle-label">
+                                    <input type="checkbox" id="dailySummary">
+                                    <span class="toggle-switch"></span>
+                                    Daily summary report
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Save Button -->
+                    <div class="settings-actions">
+                        <button class="btn-secondary">Cancel</button>
+                        <button class="btn-primary" onclick="saveSettings()">Save Changes</button>
+                    </div>
+            </main>
+        </div>
+
+        <!-- Footer -->
+        <footer class="dashboard-footer">
+            <p>&copy; 2026 Student Course Registration System - UTHM</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            checkAuth();
+            loadSettings();
+        });
+
+        async function loadSettings() {
+            try {
+                const response = await fetch('/api/admin/getSettings()');
+                const result = await response.json();
+                const settings = result.value || result;
+
+                // Populate form fields
+                document.getElementById('semester').value = settings.semester;
+                document.getElementById('startDate').value = settings.startDate;
+                document.getElementById('endDate').value = settings.endDate;
+                document.getElementById('registrationOpen').checked = settings.registrationOpen;
+                document.getElementById('maxCreditHours').value = settings.maxCreditHours;
+                document.getElementById('minCreditHours').value = settings.minCreditHours;
+                document.getElementById('requireAaApproval').checked = settings.requireAaApproval;
+                document.getElementById('emailNewRegistrations').checked = settings.emailNewRegistrations;
+                document.getElementById('emailApprovals').checked = settings.emailApprovals;
+                document.getElementById('dailySummary').checked = settings.dailySummary;
+            } catch (error) {
+                console.error('Error loading settings:', error);
+            }
+        }
+
+        async function saveSettings() {
+            const settings = {
+                semester: document.getElementById('semester').value,
+                startDate: document.getElementById('startDate').value,
+                endDate: document.getElementById('endDate').value,
+                registrationOpen: document.getElementById('registrationOpen').checked,
+                maxCreditHours: parseInt(document.getElementById('maxCreditHours').value),
+                minCreditHours: parseInt(document.getElementById('minCreditHours').value),
+                requireAaApproval: document.getElementById('requireAaApproval').checked,
+                emailNewRegistrations: document.getElementById('emailNewRegistrations').checked,
+                emailApprovals: document.getElementById('emailApprovals').checked,
+                dailySummary: document.getElementById('dailySummary').checked
+            };
+
+            try {
+                const response = await fetch('/api/admin/saveSettings', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(settings)
+                });
+                const result = await response.json();
+
+                if (result.success) {
+                    alert('Settings saved successfully!');
+                } else {
+                    alert('Error saving settings');
+                }
+            } catch (error) {
+                console.error('Error saving settings:', error);
+                alert('Error saving settings');
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,20 @@
+ID;matricNumber;name;email;faculty;enrollmentYear
+a1b2c3d4-1111-2222-3333-444455556666;A22CS0001;Ahmad bin Hassan;ahmad@student.uthm.edu.my;Faculty of Computing;2022
+a1b2c3d4-1111-2222-3333-444455556667;A22CS0002;Siti Nurhaliza;siti@student.uthm.edu.my;Faculty of Computing;2022
+a1b2c3d4-1111-2222-3333-444455556668;A22EE0003;Muhammad Farid;farid@student.uthm.edu.my;Faculty of Electrical Engineering;2022
+a1b2c3d4-1111-2222-3333-444455556669;A23CS0001;Nurul Aisyah;nurul@student.uthm.edu.my;Faculty of Computing;2023
+a1b2c3d4-1111-2222-3333-444455556670;A23CS0002;Lee Wei Ming;weiming@student.uthm.edu.my;Faculty of Computing;2023
+a1b2c3d4-1111-2222-3333-444455556671;A23CE0001;Raj Kumar;raj@student.uthm.edu.my;Faculty of Civil Engineering;2023
+a1b2c3d4-1111-2222-3333-444455556672;A23EE0001;Fatimah Zahra;fatimah@student.uthm.edu.my;Faculty of Electrical Engineering;2023
+a1b2c3d4-1111-2222-3333-444455556673;A24CS0001;Tan Ah Kow;ahkow@student.uthm.edu.my;Faculty of Computing;2024
+a1b2c3d4-1111-2222-3333-444455556674;A24CS0002;Amirah Syafiqah;amirah@student.uthm.edu.my;Faculty of Computing;2024
+a1b2c3d4-1111-2222-3333-444455556675;A24ME0001;Hafiz Rahman;hafiz@student.uthm.edu.my;Faculty of Mechanical Engineering;2024
+a1b2c3d4-1111-2222-3333-444455556676;A24CE0001;Priya Devi;priya@student.uthm.edu.my;Faculty of Civil Engineering;2024
+a1b2c3d4-1111-2222-3333-444455556677;A25CS0001;Zulkifli Amir;zulkifli@student.uthm.edu.my;Faculty of Computing;2025
+a1b2c3d4-1111-2222-3333-444455556678;A25CS0002;Sarah Lim;sarah@student.uthm.edu.my;Faculty of Computing;2025
+a1b2c3d4-1111-2222-3333-444455556679;A25EE0001;Omar Farhan;omar@student.uthm.edu.my;Faculty of Electrical Engineering;2025
+a1b2c3d4-1111-2222-3333-444455556680;A25ME0001;Anis Hanim;anis@student.uthm.edu.my;Faculty of Mechanical Engineering;2025
+a1b2c3d4-1111-2222-3333-444455556681;A26CS0001;Danish Irfan;danish@student.uthm.edu.my;Faculty of Computing;2026
+a1b2c3d4-1111-2222-3333-444455556682;A26CS0002;Nur Atiqah;atiqah@student.uthm.edu.my;Faculty of Computing;2026
+a1b2c3d4-1111-2222-3333-444455556683;A26CE0001;Vikram Singh;vikram@student.uthm.edu.my;Faculty of Civil Engineering;2026
+a1b2c3d4-1111-2222-3333-444455556684;A26EE0001;Farah Nadirah;farah@student.uthm.edu.my;Faculty of Electrical Engineering;2026
