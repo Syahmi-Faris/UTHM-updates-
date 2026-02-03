@@ -14,8 +14,7 @@
     "@cap-js/sqlite": "^2"
   },
   "scripts": {
-    "start": "cds-serve",
-    "build": "cds build --production"
+    "start": "cds-serve"
   },
   "private": true
 }
