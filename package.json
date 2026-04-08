@@ -13,7 +13,7 @@
   "scripts": {
     "deploy": ".\\node_modules\\.bin\\cds deploy --to sqlite:db.sqlite",
     "dev": ".\\node_modules\\.bin\\cds watch",
-    "start": "npx --no @sap/cds-dk deploy --to sqlite:db.sqlite && npx --no @sap/cds-dk serve"
+    "start": "./node_modules/.bin/cds deploy --to sqlite:db.sqlite && ./node_modules/.bin/cds serve"
   },
   "private": true,
   "devDependencies": {
